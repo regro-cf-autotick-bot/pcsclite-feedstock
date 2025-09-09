@@ -17,7 +17,7 @@ build:
     - if test -f Makefile; then make distclean; fi
     - rm -rf *.cache *.m4 config.guess config.log config.status config.sub depcomp ltmain.sh
     - autoreconf --verbose --install --force
-    - ./configure --prefix=$PREFIX --sbindir=$PREFIX/bin
+    - ./configure --prefix=$PREFIX --sbindir=$PREFIX/bin --disable-polkit
     - make install
     - make distcheck
     - rm $PREFIX/bin/pcsc-spy
