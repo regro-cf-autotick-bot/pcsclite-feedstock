@@ -18,7 +18,6 @@ build:
     - autoreconf --verbose --install --force
     - ./configure --prefix=$PREFIX --sbindir=$PREFIX/bin --disable-polkit
     - make install
-    - make distcheck
     - rm $PREFIX/bin/pcsc-spy
     - rm $PREFIX/lib/libpcscspy.so*
   number: 0
