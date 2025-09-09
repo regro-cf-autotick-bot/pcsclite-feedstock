@@ -28,6 +28,7 @@ build:
 
 requirements:
   build:
+    - {{ stdlib('c') }}
     - {{ compiler('c') }}
     - {{ cdt('systemd-devel') }}
     - autoconf-archive
@@ -36,7 +37,6 @@ requirements:
     - libtool
     - make
     - pkg-config
-    - sysroot_linux-64 2.17  # [linux64]
   host:
     - libudev
   run:
