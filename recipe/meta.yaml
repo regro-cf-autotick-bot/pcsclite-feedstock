@@ -38,7 +38,7 @@ requirements:
     - pkg-config
   host:
     - libudev
-    - libsystemd                None
+    - libsystemd
   run:
 
 test:
