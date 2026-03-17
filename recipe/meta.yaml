@@ -28,6 +28,7 @@ build:
 
 requirements:
   build:
+    - {{ stdlib("c") }}
     - {{ compiler('c') }}
     - autoconf-archive
     - automake
